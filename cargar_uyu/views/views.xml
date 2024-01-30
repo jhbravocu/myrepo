@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="cargar_uyu.list">
+      <field name="name">cargar_uyu list</field>
+      <field name="model">cargar_uyu.cargar_uyu</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="cargar_uyu.action_window">
+      <field name="name">cargar_uyu window</field>
+      <field name="res_model">cargar_uyu.cargar_uyu</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="cargar_uyu.action_server">
+      <field name="name">cargar_uyu server</field>
+      <field name="model_id" ref="model_cargar_uyu_cargar_uyu"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="cargar_uyu" id="cargar_uyu.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="cargar_uyu.menu_1" parent="cargar_uyu.menu_root"/>
+    <menuitem name="Menu 2" id="cargar_uyu.menu_2" parent="cargar_uyu.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="cargar_uyu.menu_1_list" parent="cargar_uyu.menu_1"
+              action="cargar_uyu.action_window"/>
+    <menuitem name="Server to list" id="cargar_uyu" parent="cargar_uyu.menu_2"
+              action="cargar_uyu.action_server"/>
+-->
+  </data>
+</odoo>
