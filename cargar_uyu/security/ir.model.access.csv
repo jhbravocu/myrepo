@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cargar_uyu_cargar_uyu,cargar_uyu.cargar_uyu,model_cargar_uyu_cargar_uyu,base.group_user,1,1,1,1
+access_cargar_uyu_cargar_uyu,cargar_uyu.cargar_uyu,grp_catalogos.model_grp_localidad,base.group_user,1,1,1,1
